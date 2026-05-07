@@ -394,6 +394,24 @@ const WEBSITE = {
   .overlay-title{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--cream);display:block;margin-bottom:.25rem}
   .overlay-meta{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,240,232,.5)}
 
+  /* SOLD Stempel auf Website */
+  .sold-stamp{
+    position:absolute;top:50%;left:50%;
+    transform:translate(-50%,-50%) rotate(-18deg) scale(0);
+    width:90px;height:90px;
+    border:3.5px solid #e05c5c;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    color:#e05c5c;font-family:var(--serif);font-size:1.1rem;
+    letter-spacing:.12em;text-transform:uppercase;
+    pointer-events:none;
+    transition:transform .35s cubic-bezier(.175,.885,.32,1.4),opacity .3s;
+    opacity:0;z-index:10;
+    background:rgba(224,92,92,.08);
+  }
+  .sold-stamp::before{content:'';position:absolute;inset:5px;border:1px solid rgba(224,92,92,.35);border-radius:50%}
+  .painting.is-sold .sold-stamp{transform:translate(-50%,-50%) rotate(-18deg) scale(1);opacity:1}
+  .painting.is-sold .paint-canvas{filter:grayscale(30%) brightness(.85)}
+
   /* Cursor-Hinweis: Lupe beim Hovern über Bild */
   .painting{cursor:zoom-in}
 
@@ -1190,17 +1208,41 @@ WEBSITE.bilder.forEach((img,i) => {
   obs.observe(item);
 });
 
-// 2. Dann config.json laden und neue Bilder hinzufügen die noch nicht in WEBSITE.bilder sind
+// 2. config.json laden: neue Bilder + SOLD Status + Titeländerungen
 fetch('config.json?v='+Date.now())
   .then(r => r.ok ? r.json() : null)
   .then(config => {
     if (!config || !config.bilder) return;
     const existing = new Set(WEBSITE.bilder.map(b => b.bild));
+
+    // Neue Bilder hinzufügen
     const newImgs = config.bilder.filter(b => !existing.has(b.bild));
     newImgs.forEach((img, i) => {
       const item = buildPainting(img, WEBSITE.bilder.length + i);
       gg.appendChild(item);
       obs.observe(item);
+    });
+
+    // SOLD Status + Titeländerungen auf bestehende Bilder anwenden
+    config.bilder.forEach(b => {
+      // Finde das entsprechende DOM-Element
+      const items = gg.querySelectorAll('.painting');
+      items.forEach(item => {
+        const img = item.querySelector('img');
+        if (!img) return;
+        const src = img.src || '';
+        if (!src.includes(encodeURIComponent(b.bild)) && !src.includes(b.bild)) return;
+
+        // SOLD Stempel
+        if (b.sold) {
+          item.classList.add('is-sold');
+        }
+        // Geänderter Titel
+        if (b.titel) {
+          const titleEl = item.querySelector('.overlay-title');
+          if (titleEl) titleEl.textContent = b.titel;
+        }
+      });
     });
   })
   .catch(() => {}); // Kein config.json = kein Problem
