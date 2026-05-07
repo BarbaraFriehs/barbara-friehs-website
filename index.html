@@ -1141,7 +1141,7 @@ if(f&&f.bild){
 /* === Galerie bauen mit Lazy Loading === */
 const gg=document.getElementById('gallery-grid');
 
-WEBSITE.bilder.forEach((img,i)=>{
+function buildPainting(img, i) {
   const item=document.createElement('div');
   item.className='painting reveal';
   item.setAttribute('role','listitem');
@@ -1149,7 +1149,6 @@ WEBSITE.bilder.forEach((img,i)=>{
   item.setAttribute('aria-label',img.titel+', '+img.jahr);
 
   if(img.bild){
-    // Lazy Loading: nur erstes Bild eager, alle anderen lazy
     const canvas=document.createElement('div');
     canvas.className='paint-canvas';
     const picture=document.createElement('img');
@@ -1160,8 +1159,7 @@ WEBSITE.bilder.forEach((img,i)=>{
     canvas.appendChild(picture);
     item.appendChild(canvas);
   }else{
-    // Platzhalter
-    const grad='linear-gradient(135deg,'+img.farbe+' 0%,'+shade(img.farbe,-45)+' 100%)';
+    const grad='linear-gradient(135deg,'+(img.farbe||'#888')+' 0%,'+shade(img.farbe||'#888',-45)+' 100%)';
     const ph=document.createElement('div');
     ph.className='paint-placeholder-wrap';
     ph.style.background=grad;
@@ -1170,7 +1168,6 @@ WEBSITE.bilder.forEach((img,i)=>{
     item.appendChild(ph);
   }
 
-  // Hover-Overlay
   const overlay=document.createElement('div');
   overlay.className='painting-overlay';
   overlay.setAttribute('aria-hidden','true');
@@ -1179,18 +1176,36 @@ WEBSITE.bilder.forEach((img,i)=>{
   titleEl.textContent=img.titel;
   const metaEl=document.createElement('span');
   metaEl.className='overlay-meta';
-  metaEl.textContent=img.jahr+' · '+img.technik+' · '+img.groesse;
+  metaEl.textContent=img.jahr+' · '+img.technik+(img.groesse?' · '+img.groesse:'');
   overlay.appendChild(titleEl);
   overlay.appendChild(metaEl);
   item.appendChild(overlay);
+  return item;
+}
 
+// 1. Zuerst WEBSITE.bilder anzeigen
+WEBSITE.bilder.forEach((img,i) => {
+  const item = buildPainting(img, i);
   gg.appendChild(item);
+  obs.observe(item);
 });
 
-/* Kurse werden direkt als Konfetti-Widgets im HTML gerendert — kein JS nötig */
+// 2. Dann config.json laden und neue Bilder hinzufügen die noch nicht in WEBSITE.bilder sind
+fetch('config.json?v='+Date.now())
+  .then(r => r.ok ? r.json() : null)
+  .then(config => {
+    if (!config || !config.bilder) return;
+    const existing = new Set(WEBSITE.bilder.map(b => b.bild));
+    const newImgs = config.bilder.filter(b => !existing.has(b.bild));
+    newImgs.forEach((img, i) => {
+      const item = buildPainting(img, WEBSITE.bilder.length + i);
+      gg.appendChild(item);
+      obs.observe(item);
+    });
+  })
+  .catch(() => {}); // Kein config.json = kein Problem
 
-/* Reveal neu beobachten für dynamisch erstellte Elemente */
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+/* Kurse werden direkt als Konfetti-Widgets im HTML gerendert — kein JS nötig */
 </script>
 <!-- ===== LIGHTBOX ===== -->
 <div class="lb-backdrop" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
