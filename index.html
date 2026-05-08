@@ -1243,13 +1243,20 @@ fetch('config.json?v='+Date.now())
         if (!src.includes(encodeURIComponent(b.bild)) && !src.includes(b.bild)) return;
 
         // SOLD Stempel
-        if (b.sold) {
-          item.classList.add('is-sold');
-        }
-        // Geänderter Titel
+        if (b.sold) item.classList.add('is-sold');
+        else item.classList.remove('is-sold');
+        // Titel
         if (b.titel) {
           const titleEl = item.querySelector('.overlay-title');
           if (titleEl) titleEl.textContent = b.titel;
+        }
+        // Technik, Jahr, Größe
+        const metaEl = item.querySelector('.overlay-meta');
+        if (metaEl) {
+          const t = b.technik || '';
+          const j = b.jahr   || '';
+          const g = b.groesse|| '';
+          metaEl.textContent = [j, t.toUpperCase(), g.toUpperCase()].filter(Boolean).join(' · ');
         }
       });
     });
