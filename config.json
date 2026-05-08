@@ -1,15 +1,6 @@
 {
   "bilder": [
     {
-      "bild": "katze.png",
-      "titel": "Katze",
-      "technik": "acrylic on canvas",
-      "jahr": "2026",
-      "groesse": "",
-      "farbe": "#888888",
-      "sold": false
-    },
-    {
       "bild": "Fiddle leaf fig.jpg",
       "titel": "Fiddle Leaf Fig",
       "technik": "oil on canvas",
@@ -118,15 +109,6 @@
       "sold": false
     },
     {
-      "bild": "diving on the Seychelles.jpg",
-      "titel": "Diving on the Seychelles",
-      "technik": "oil on canvas",
-      "jahr": "2026",
-      "groesse": "60×80 cm",
-      "farbe": "#2070a0",
-      "sold": false
-    },
-    {
       "bild": "Goethes Faust.jpg",
       "titel": "Goethe's Faust",
       "technik": "oil on canvas",
@@ -142,6 +124,15 @@
       "jahr": "2026",
       "groesse": "50×100 cm",
       "farbe": "#c08040",
+      "sold": false
+    },
+    {
+      "bild": "diving on the Seychelles.jpg",
+      "titel": "Diving on the Seychelles",
+      "technik": "oil on canvas",
+      "jahr": "2026",
+      "groesse": "60×80 cm",
+      "farbe": "#2070a0",
       "sold": false
     },
     {
