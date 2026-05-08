@@ -10,39 +10,12 @@
       "sold": false
     },
     {
-      "bild": "bridge in greece.jpg",
-      "titel": "Bridge in Greece",
-      "technik": "acrylic on canvas",
-      "jahr": "2021",
+      "bild": "Fiddle leaf fig.jpg",
+      "titel": "Fiddle Leaf Fig",
+      "technik": "oil on canvas",
+      "jahr": "2026",
       "groesse": "40×40 cm",
-      "farbe": "#5080a0",
-      "sold": false
-    },
-    {
-      "bild": "liecken.jpg",
-      "titel": "Liecken",
-      "technik": "acrylic on canvas",
-      "jahr": "2021",
-      "groesse": "50×60 cm",
-      "farbe": "#2060a8",
-      "sold": false
-    },
-    {
-      "bild": "room in Milan.jpg",
-      "titel": "Room in Milán",
-      "technik": "acrylic on canvas",
-      "jahr": "2024",
-      "groesse": "40×50 cm",
-      "farbe": "#c87040",
-      "sold": false
-    },
-    {
-      "bild": "pears and tea.jpg",
-      "titel": "Pears and Tea",
-      "technik": "acrylic on canvas",
-      "jahr": "2021",
-      "groesse": "40×50 cm",
-      "farbe": "#8a9050",
+      "farbe": "#4a7040",
       "sold": false
     },
     {
@@ -55,12 +28,30 @@
       "sold": false
     },
     {
-      "bild": "Anna Theke by herself.jpg",
-      "titel": "Anna Theke by Herself",
+      "bild": "pears and tea.jpg",
+      "titel": "Pears and Tea",
+      "technik": "acrylic on canvas",
+      "jahr": "2021",
+      "groesse": "40×50 cm",
+      "farbe": "#8a9050",
+      "sold": false
+    },
+    {
+      "bild": "room in Milan.jpg",
+      "titel": "Room in Milán",
       "technik": "acrylic on canvas",
       "jahr": "2024",
-      "groesse": "60×80 cm",
-      "farbe": "#a06858",
+      "groesse": "40×50 cm",
+      "farbe": "#c87040",
+      "sold": false
+    },
+    {
+      "bild": "liecken.jpg",
+      "titel": "Liecken",
+      "technik": "acrylic on canvas",
+      "jahr": "2021",
+      "groesse": "50×60 cm",
+      "farbe": "#2060a8",
       "sold": false
     },
     {
@@ -82,21 +73,39 @@
       "sold": false
     },
     {
-      "bild": "Fiddle leaf fig.jpg",
-      "titel": "Fiddle Leaf Fig",
-      "technik": "oil on canvas",
-      "jahr": "2026",
-      "groesse": "40×40 cm",
-      "farbe": "#4a7040",
+      "bild": "Anna Theke by herself.jpg",
+      "titel": "Anna Theke by Herself",
+      "technik": "acrylic on canvas",
+      "jahr": "2024",
+      "groesse": "60×80 cm",
+      "farbe": "#a06858",
       "sold": false
     },
     {
-      "bild": "cat in a box.jpg",
-      "titel": "Cat In A Box",
+      "bild": "bridge in greece.jpg",
+      "titel": "Bridge in Greece",
       "technik": "acrylic on canvas",
-      "jahr": "2020",
-      "groesse": "40×30 cm",
-      "farbe": "#888888",
+      "jahr": "2021",
+      "groesse": "40×40 cm",
+      "farbe": "#5080a0",
+      "sold": false
+    },
+    {
+      "bild": "In the deserts of San Diego.jpg",
+      "titel": "In the Deserts of San Diego",
+      "technik": "oil on canvas",
+      "jahr": "2026",
+      "groesse": "50×100 cm",
+      "farbe": "#c08040",
+      "sold": false
+    },
+    {
+      "bild": "cactus love.jpg",
+      "titel": "Cactus Love",
+      "technik": "acrylic on canvas",
+      "jahr": "2025",
+      "groesse": "20×30 cm",
+      "farbe": "#608040",
       "sold": false
     },
     {
@@ -106,6 +115,15 @@
       "jahr": "2025",
       "groesse": "30×40 cm",
       "farbe": "#b89060",
+      "sold": false
+    },
+    {
+      "bild": "cat in a box.jpg",
+      "titel": "Cat In A Box",
+      "technik": "acrylic on canvas",
+      "jahr": "2020",
+      "groesse": "40×30 cm",
+      "farbe": "#888888",
       "sold": false
     },
     {
@@ -142,24 +160,6 @@
       "jahr": "2025",
       "groesse": "30×40 cm",
       "farbe": "#988878",
-      "sold": false
-    },
-    {
-      "bild": "cactus love.jpg",
-      "titel": "Cactus Love",
-      "technik": "acrylic on canvas",
-      "jahr": "2025",
-      "groesse": "20×30 cm",
-      "farbe": "#608040",
-      "sold": false
-    },
-    {
-      "bild": "In the deserts of San Diego.jpg",
-      "titel": "In the Deserts of San Diego",
-      "technik": "oil on canvas",
-      "jahr": "2026",
-      "groesse": "50×100 cm",
-      "farbe": "#c08040",
       "sold": false
     },
     {
@@ -379,5 +379,5 @@
       "sold": false
     }
   ],
-  "titelbild": "magick.jpg"
+  "titelbild": "bridge in greece.jpg"
 }
