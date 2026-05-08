@@ -172,21 +172,21 @@
       "sold": false
     },
     {
-      "bild": "diving on the Seychelles.jpg",
-      "titel": "Diving on the Seychelles",
-      "technik": "oil on canvas",
-      "jahr": "2026",
-      "groesse": "60×80 cm",
-      "farbe": "#2070a0",
-      "sold": false
-    },
-    {
       "bild": "Goethes Faust.jpg",
       "titel": "Goethe's Faust",
       "technik": "oil on canvas",
       "jahr": "2025",
       "groesse": "100×100 cm",
       "farbe": "#403028",
+      "sold": false
+    },
+    {
+      "bild": "diving on the Seychelles.jpg",
+      "titel": "Diving on the Seychelles",
+      "technik": "oil on canvas",
+      "jahr": "2026",
+      "groesse": "60×80 cm",
+      "farbe": "#2070a0",
       "sold": false
     },
     {
