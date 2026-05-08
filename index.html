@@ -1247,7 +1247,17 @@ fetch('config.json?v='+Date.now())
       obs.observe(item);
     });
 
-    // SOLD Status + Titeländerungen auf bestehende Bilder anwenden
+    // Gelöschte Bilder ausblenden — nur Bilder zeigen die noch in config.json sind
+    const configBilder = new Set(config.bilder.map(b => b.bild));
+    gg.querySelectorAll('.painting').forEach(item => {
+      const img = item.querySelector('img');
+      if (!img) return;
+      const src = decodeURIComponent(img.src || '');
+      const inConfig = config.bilder.some(b => src.includes(b.bild));
+      if (!inConfig) item.style.display = 'none';
+    });
+
+    // SOLD Status + Metadaten auf bestehende Bilder anwenden
     config.bilder.forEach(b => {
       // Finde das entsprechende DOM-Element
       const items = gg.querySelectorAll('.painting');
