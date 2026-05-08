@@ -380,12 +380,12 @@
     },
     {
       "bild": "katze.png",
-      "titel": "Katze",
-      "technik": "watercolour on paper",
-      "jahr": "2020",
-      "groesse": "1×1 cm",
+      "titel": "Hund",
+      "technik": "oil on canvas",
+      "jahr": "20",
+      "groesse": "20×20 cm",
       "farbe": "#888888",
-      "sold": true
+      "sold": false
     }
   ]
 }
