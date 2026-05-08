@@ -1,6 +1,15 @@
 {
   "bilder": [
     {
+      "bild": "katze.png",
+      "titel": "Katze",
+      "technik": "acrylic on canvas",
+      "jahr": "2026",
+      "groesse": "",
+      "farbe": "#888888",
+      "sold": false
+    },
+    {
       "bild": "magick.jpg",
       "titel": "Magick",
       "technik": "acrylic on canvas",
