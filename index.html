@@ -1240,9 +1240,10 @@ fetch('config.json?v='+Date.now())
 
     // Neue Bilder hinzufügen
     const newImgs = config.bilder.filter(b => !existing.has(b.bild));
-    newImgs.forEach((img, i) => {
+    // Neue Bilder in umgekehrter Reihenfolge vorne einfügen damit neueste zuerst kommt
+    [...newImgs].reverse().forEach((img, i) => {
       const item = buildPainting(img, WEBSITE.bilder.length + i);
-      gg.appendChild(item);
+      gg.prepend(item);
       obs.observe(item);
     });
 
