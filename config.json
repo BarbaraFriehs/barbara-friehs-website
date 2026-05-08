@@ -380,12 +380,12 @@
     },
     {
       "bild": "katze.png",
-      "titel": "Katze",
-      "technik": "oil on canvas",
-      "jahr": "1999",
-      "groesse": "9×9 cm",
+      "titel": "hund",
+      "technik": "mixed media",
+      "jahr": "1000",
+      "groesse": "1000×1000 cm",
       "farbe": "#888888",
-      "sold": false
+      "sold": true
     }
   ]
 }
