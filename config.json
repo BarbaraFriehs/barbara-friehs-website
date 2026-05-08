@@ -1,22 +1,22 @@
 {
   "bilder": [
     {
+      "bild": "magick.jpg",
+      "titel": "Magickk",
+      "technik": "oil on canvas",
+      "jahr": "1",
+      "groesse": "1×1 cm",
+      "farbe": "#d4a020",
+      "sold": false
+    },
+    {
       "bild": "Fiddle leaf fig.jpg",
       "titel": "Fiddle Leaf Fig",
       "technik": "oil on canvas",
       "jahr": "2026",
       "groesse": "40×40 cm",
       "farbe": "#4a7040",
-      "sold": false
-    },
-    {
-      "bild": "magick.jpg",
-      "titel": "Magick",
-      "technik": "acrylic on canvas",
-      "jahr": "22222",
-      "groesse": "22222×22222 cm",
-      "farbe": "#d4a020",
-      "sold": false
+      "sold": true
     },
     {
       "bild": "liecken.jpg",
