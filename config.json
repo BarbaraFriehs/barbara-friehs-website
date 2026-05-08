@@ -1,12 +1,57 @@
 {
   "bilder": [
     {
+      "bild": "magick.jpg",
+      "titel": "Magick",
+      "technik": "acrylic on canvas",
+      "jahr": "22222",
+      "groesse": "22222×22222 cm",
+      "farbe": "#d4a020",
+      "sold": true
+    },
+    {
+      "bild": "pears and tea.jpg",
+      "titel": "Pears and Tea",
+      "technik": "acrylic on canvas",
+      "jahr": "2021",
+      "groesse": "40×50 cm",
+      "farbe": "#8a9050",
+      "sold": false
+    },
+    {
+      "bild": "cococunt blood orange.jpg",
+      "titel": "Coconut Blood Orange",
+      "technik": "acrylic on canvas",
+      "jahr": "2021",
+      "groesse": "30×40 cm",
+      "farbe": "#d06830",
+      "sold": false
+    },
+    {
+      "bild": "plantains and oranges.jpg",
+      "titel": "Plantains and Oranges",
+      "technik": "acrylic on canvas",
+      "jahr": "2021",
+      "groesse": "40×40 cm",
+      "farbe": "#c08030",
+      "sold": false
+    },
+    {
       "bild": "Fiddle leaf fig.jpg",
       "titel": "Fiddle Leaf Fig",
       "technik": "oil on canvas",
       "jahr": "2026",
       "groesse": "40×40 cm",
       "farbe": "#4a7040",
+      "sold": false
+    },
+    {
+      "bild": "liecken.jpg",
+      "titel": "Liecken",
+      "technik": "acrylic on canvas",
+      "jahr": "2021",
+      "groesse": "50×60 cm",
+      "farbe": "#2060a8",
       "sold": false
     },
     {
@@ -91,12 +136,12 @@
       "sold": false
     },
     {
-      "bild": "cococunt blood orange.jpg",
-      "titel": "Coconut Blood Orange",
-      "technik": "acrylic on canvas",
-      "jahr": "2021",
-      "groesse": "30×40 cm",
-      "farbe": "#d06830",
+      "bild": "diving on the Seychelles.jpg",
+      "titel": "Diving on the Seychelles",
+      "technik": "oil on canvas",
+      "jahr": "2026",
+      "groesse": "60×80 cm",
+      "farbe": "#2070a0",
       "sold": false
     },
     {
@@ -124,33 +169,6 @@
       "jahr": "2026",
       "groesse": "50×100 cm",
       "farbe": "#c08040",
-      "sold": false
-    },
-    {
-      "bild": "diving on the Seychelles.jpg",
-      "titel": "Diving on the Seychelles",
-      "technik": "oil on canvas",
-      "jahr": "2026",
-      "groesse": "60×80 cm",
-      "farbe": "#2070a0",
-      "sold": false
-    },
-    {
-      "bild": "pears and tea.jpg",
-      "titel": "Pears and Tea",
-      "technik": "acrylic on canvas",
-      "jahr": "2021",
-      "groesse": "40×50 cm",
-      "farbe": "#8a9050",
-      "sold": false
-    },
-    {
-      "bild": "liecken.jpg",
-      "titel": "Liecken",
-      "technik": "acrylic on canvas",
-      "jahr": "2021",
-      "groesse": "50×60 cm",
-      "farbe": "#2060a8",
       "sold": false
     },
     {
@@ -199,15 +217,6 @@
       "sold": false
     },
     {
-      "bild": "plantains and oranges.jpg",
-      "titel": "Plantains and Oranges",
-      "technik": "acrylic on canvas",
-      "jahr": "2021",
-      "groesse": "40×40 cm",
-      "farbe": "#c08030",
-      "sold": false
-    },
-    {
       "bild": "province in france.jpg",
       "titel": "Province in France",
       "technik": "acrylic on canvas",
@@ -251,15 +260,6 @@
       "groesse": "40×60 cm",
       "farbe": "#c09060",
       "sold": false
-    },
-    {
-      "bild": "magick.jpg",
-      "titel": "Magick",
-      "technik": "acrylic on canvas",
-      "jahr": "22222",
-      "groesse": "22222×22222 cm",
-      "farbe": "#d4a020",
-      "sold": true
     },
     {
       "bild": "section of a forest.jpg",
