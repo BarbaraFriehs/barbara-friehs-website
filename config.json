@@ -1,6 +1,15 @@
 {
   "bilder": [
     {
+      "bild": "cat in a box.jpg",
+      "titel": "Cat In A Box",
+      "technik": "acrylic on canvas",
+      "jahr": "2020",
+      "groesse": "40×30 cm",
+      "farbe": "#888888",
+      "sold": false
+    },
+    {
       "bild": "magick.jpg",
       "titel": "dfgfdg",
       "technik": "acrylic on canvas",
