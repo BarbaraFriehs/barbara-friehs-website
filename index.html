@@ -500,6 +500,20 @@ const WEBSITE = {
   }
   .lb-prev{left:.8rem}
   .lb-next{right:.8rem}
+  /* SOLD-Stempel in Lightbox */
+  .lb-backdrop .lb-sold-stamp{
+    display:none;position:absolute;top:50%;left:50%;
+    transform:translate(-50%,-50%) rotate(-18deg) scale(0);
+    width:90px;height:90px;border-radius:50%;
+    border:2px solid rgba(224,92,92,.7);
+    color:rgba(224,92,92,.9);font-size:.75rem;font-weight:700;
+    letter-spacing:.12em;text-transform:uppercase;
+    align-items:center;justify-content:center;
+    pointer-events:none;transition:transform .3s;
+  }
+  .lb-backdrop .lb-sold-stamp::before{content:'';position:absolute;inset:5px;border:1px solid rgba(224,92,92,.35);border-radius:50%}
+  .lb-backdrop.is-sold .lb-sold-stamp{display:flex;transform:translate(-50%,-50%) rotate(-18deg) scale(1)}
+  .lb-backdrop.is-sold .lb-img{filter:grayscale(30%) brightness(.85)}
   .lb-prev:hover,.lb-prev:focus,.lb-next:hover,.lb-next:focus{background:rgba(245,240,232,.18);outline:none}
   @media(max-width:600px){
     .lb-prev{left:.3rem} .lb-next{right:.3rem}
@@ -1272,6 +1286,7 @@ fetch('config.json?v='+Date.now())
   <button class="lb-next" id="lb-next" aria-label="Next image">&#8594;</button>
   <div class="lb-inner">
     <img class="lb-img" id="lb-img" src="" alt="">
+    <div class="lb-sold-stamp">SOLD</div>
     <div class="lb-caption">
       <span id="lb-title"></span>
       <div class="lb-meta" id="lb-meta"></div>
@@ -1306,6 +1321,12 @@ fetch('config.json?v='+Date.now())
     lbImg.alt     = img.alt || '';
     lbTitle.textContent = card.querySelector('.overlay-title')?.textContent || '';
     lbMeta.textContent  = card.querySelector('.overlay-meta')?.textContent  || '';
+    // SOLD-Stempel in Lightbox übernehmen
+    if (card.classList.contains('is-sold')) {
+      lb.classList.add('is-sold');
+    } else {
+      lb.classList.remove('is-sold');
+    }
     lb.classList.add('open');
     document.body.style.overflow = 'hidden';
     lbClose.focus();
