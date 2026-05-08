@@ -2,39 +2,12 @@
   "bilder": [
     {
       "bild": "magick.jpg",
-      "titel": "dfgfdg",
+      "titel": "Magick",
       "technik": "acrylic on canvas",
       "jahr": "22222",
       "groesse": "22222×22222 cm",
       "farbe": "#d4a020",
       "sold": true
-    },
-    {
-      "bild": "pears and tea.jpg",
-      "titel": "Pears and Tea",
-      "technik": "acrylic on canvas",
-      "jahr": "2021",
-      "groesse": "40×50 cm",
-      "farbe": "#8a9050",
-      "sold": false
-    },
-    {
-      "bild": "cococunt blood orange.jpg",
-      "titel": "Coconut Blood Orange",
-      "technik": "acrylic on canvas",
-      "jahr": "2021",
-      "groesse": "30×40 cm",
-      "farbe": "#d06830",
-      "sold": false
-    },
-    {
-      "bild": "cat in a box.jpg",
-      "titel": "Cat In A Box11",
-      "technik": "oil on canvas",
-      "jahr": "11",
-      "groesse": "11×11 cm",
-      "farbe": "#888888",
-      "sold": false
     },
     {
       "bild": "Fiddle leaf fig.jpg",
@@ -61,6 +34,15 @@
       "jahr": "2024",
       "groesse": "40×50 cm",
       "farbe": "#c87040",
+      "sold": false
+    },
+    {
+      "bild": "pears and tea.jpg",
+      "titel": "Pears and Tea",
+      "technik": "acrylic on canvas",
+      "jahr": "2021",
+      "groesse": "40×50 cm",
+      "farbe": "#8a9050",
       "sold": false
     },
     {
@@ -109,6 +91,15 @@
       "sold": false
     },
     {
+      "bild": "cat in a box.jpg",
+      "titel": "Cat In A Box11",
+      "technik": "oil on canvas",
+      "jahr": "11",
+      "groesse": "11×11 cm",
+      "farbe": "#888888",
+      "sold": false
+    },
+    {
       "bild": "chickens.jpg",
       "titel": "Chickens",
       "technik": "acrylic on canvas",
@@ -124,6 +115,15 @@
       "jahr": "2020",
       "groesse": "18×24 cm",
       "farbe": "#c04040",
+      "sold": false
+    },
+    {
+      "bild": "cococunt blood orange.jpg",
+      "titel": "Coconut Blood Orange",
+      "technik": "acrylic on canvas",
+      "jahr": "2021",
+      "groesse": "30×40 cm",
+      "farbe": "#d06830",
       "sold": false
     },
     {
