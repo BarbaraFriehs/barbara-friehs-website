@@ -1,6 +1,17 @@
 {
   "bilder": [
     {
+      "bild": "IMG_3016.jpeg",
+      "titel": "IMG 3016",
+      "technik": "acrylic on canvas",
+      "jahr": "2026",
+      "groesse": "",
+      "farbe": "#888888",
+      "sold": false,
+      "width": 0,
+      "height": 0
+    },
+    {
       "bild": "magick.jpg",
       "titel": "Magick",
       "technik": "oil on canvas",
